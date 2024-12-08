@@ -1,0 +1,44 @@
+#--------------------------------------------------------------------------------------------------#
+######################################### Package Config ###########################################
+#__________________________________________________________________________________________________#
+[project]
+name = "just_another_python_package"
+version = "0.1.0"
+description = "TODO:: Add a short description of just_another_python_package here."
+license = "MIT"
+
+readme = "README.md"
+keywords = ["just-another-python-package", "pixi", "python"]
+
+authors = [{ name = "John Doe", email = "johndoe@example.com" }]
+maintainers = [{ name = "John Doe", email = "johndoe@example.com" }]
+
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: MIT License",
+]
+
+requires-python = ">= 3.10"
+dependencies = [
+  "rich",
+]
+
+[project.urls]
+homepage = "https://github.com/jjjermiah/just-another-python-package"
+repository = "https://github.com/jjjermiah/just-another-python-package"
+documentation = "https://jjjermiah.github.io/just-another-python-package/"
+changelog = "https://github.com/jjjermiah/just-another-python-package/blob/main/docs/CHANGELOG.md"
+issues = "https://github.com/jjjermiah/just-another-python-package/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+myscript = "just_another_python_package.main:main"
